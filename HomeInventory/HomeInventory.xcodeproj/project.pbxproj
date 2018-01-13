@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D220C702009BF760051FA04 /* JETAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D220C6F2009BF760051FA04 /* JETAppDelegate.m */; };
+		0D220C732009BF760051FA04 /* JETPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D220C722009BF760051FA04 /* JETPhotosViewController.m */; };
+		0D220C792009BF760051FA04 /* HomeInventory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D220C772009BF760051FA04 /* HomeInventory.xcdatamodeld */; };
+		0D220C7B2009BF760051FA04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D220C7A2009BF760051FA04 /* Assets.xcassets */; };
+		0D220C7E2009BF760051FA04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D220C7C2009BF760051FA04 /* LaunchScreen.storyboard */; };
+		0D220C812009BF760051FA04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D220C802009BF760051FA04 /* main.m */; };
+		0D220C8B2009BF770051FA04 /* HomeInventoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D220C8A2009BF770051FA04 /* HomeInventoryTests.m */; };
+		0D220C962009BF770051FA04 /* HomeInventoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D220C952009BF770051FA04 /* HomeInventoryUITests.m */; };
+		0D220CE62009F98B0051FA04 /* JETInventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D220CE52009F98B0051FA04 /* JETInventoryViewController.m */; };
+		0D220CE8200A05CE0051FA04 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0D220CE7200A05CE0051FA04 /* MobileNet.mlmodel */; };
+		0DD4073D200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4073C200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D220C872009BF760051FA04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D220C632009BF760051FA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D220C6A2009BF760051FA04;
+			remoteInfo = HomeInventory;
+		};
+		0D220C922009BF770051FA04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D220C632009BF760051FA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D220C6A2009BF760051FA04;
+			remoteInfo = HomeInventory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D220C6B2009BF760051FA04 /* HomeInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D220C6E2009BF760051FA04 /* JETAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JETAppDelegate.h; sourceTree = "<group>"; };
+		0D220C6F2009BF760051FA04 /* JETAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JETAppDelegate.m; sourceTree = "<group>"; };
+		0D220C712009BF760051FA04 /* JETPhotosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JETPhotosViewController.h; sourceTree = "<group>"; };
+		0D220C722009BF760051FA04 /* JETPhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JETPhotosViewController.m; sourceTree = "<group>"; };
+		0D220C782009BF760051FA04 /* HomeInventory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeInventory.xcdatamodel; sourceTree = "<group>"; };
+		0D220C7A2009BF760051FA04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D220C7D2009BF760051FA04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D220C7F2009BF760051FA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D220C802009BF760051FA04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D220C862009BF760051FA04 /* HomeInventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeInventoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D220C8A2009BF770051FA04 /* HomeInventoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeInventoryTests.m; sourceTree = "<group>"; };
+		0D220C8C2009BF770051FA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D220C912009BF770051FA04 /* HomeInventoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeInventoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D220C952009BF770051FA04 /* HomeInventoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeInventoryUITests.m; sourceTree = "<group>"; };
+		0D220C972009BF770051FA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D220CE42009F98B0051FA04 /* JETInventoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JETInventoryViewController.h; sourceTree = "<group>"; };
+		0D220CE52009F98B0051FA04 /* JETInventoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JETInventoryViewController.m; sourceTree = "<group>"; };
+		0D220CE7200A05CE0051FA04 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		0DD4073B200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JETPickRecognizedItemsTableViewController.h; sourceTree = "<group>"; };
+		0DD4073C200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JETPickRecognizedItemsTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D220C682009BF760051FA04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D220C832009BF760051FA04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D220C8E2009BF770051FA04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D220C622009BF760051FA04 = {
+			isa = PBXGroup;
+			children = (
+				0D220C6D2009BF760051FA04 /* HomeInventory */,
+				0D220C892009BF760051FA04 /* HomeInventoryTests */,
+				0D220C942009BF770051FA04 /* HomeInventoryUITests */,
+				0D220C6C2009BF760051FA04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D220C6C2009BF760051FA04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D220C6B2009BF760051FA04 /* HomeInventory.app */,
+				0D220C862009BF760051FA04 /* HomeInventoryTests.xctest */,
+				0D220C912009BF770051FA04 /* HomeInventoryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D220C6D2009BF760051FA04 /* HomeInventory */ = {
+			isa = PBXGroup;
+			children = (
+				0D220C6E2009BF760051FA04 /* JETAppDelegate.h */,
+				0D220C6F2009BF760051FA04 /* JETAppDelegate.m */,
+				0D220C712009BF760051FA04 /* JETPhotosViewController.h */,
+				0D220C722009BF760051FA04 /* JETPhotosViewController.m */,
+				0D220CE42009F98B0051FA04 /* JETInventoryViewController.h */,
+				0D220CE52009F98B0051FA04 /* JETInventoryViewController.m */,
+				0DD4073B200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.h */,
+				0DD4073C200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m */,
+				0D220CE7200A05CE0051FA04 /* MobileNet.mlmodel */,
+				0D220C7A2009BF760051FA04 /* Assets.xcassets */,
+				0D220C7C2009BF760051FA04 /* LaunchScreen.storyboard */,
+				0D220C7F2009BF760051FA04 /* Info.plist */,
+				0D220C802009BF760051FA04 /* main.m */,
+				0D220C772009BF760051FA04 /* HomeInventory.xcdatamodeld */,
+			);
+			path = HomeInventory;
+			sourceTree = "<group>";
+		};
+		0D220C892009BF760051FA04 /* HomeInventoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D220C8A2009BF770051FA04 /* HomeInventoryTests.m */,
+				0D220C8C2009BF770051FA04 /* Info.plist */,
+			);
+			path = HomeInventoryTests;
+			sourceTree = "<group>";
+		};
+		0D220C942009BF770051FA04 /* HomeInventoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D220C952009BF770051FA04 /* HomeInventoryUITests.m */,
+				0D220C972009BF770051FA04 /* Info.plist */,
+			);
+			path = HomeInventoryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D220C6A2009BF760051FA04 /* HomeInventory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D220C9A2009BF770051FA04 /* Build configuration list for PBXNativeTarget "HomeInventory" */;
+			buildPhases = (
+				0D220C672009BF760051FA04 /* Sources */,
+				0D220C682009BF760051FA04 /* Frameworks */,
+				0D220C692009BF760051FA04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeInventory;
+			productName = HomeInventory;
+			productReference = 0D220C6B2009BF760051FA04 /* HomeInventory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D220C852009BF760051FA04 /* HomeInventoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D220C9D2009BF770051FA04 /* Build configuration list for PBXNativeTarget "HomeInventoryTests" */;
+			buildPhases = (
+				0D220C822009BF760051FA04 /* Sources */,
+				0D220C832009BF760051FA04 /* Frameworks */,
+				0D220C842009BF760051FA04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D220C882009BF760051FA04 /* PBXTargetDependency */,
+			);
+			name = HomeInventoryTests;
+			productName = HomeInventoryTests;
+			productReference = 0D220C862009BF760051FA04 /* HomeInventoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D220C902009BF770051FA04 /* HomeInventoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D220CA02009BF770051FA04 /* Build configuration list for PBXNativeTarget "HomeInventoryUITests" */;
+			buildPhases = (
+				0D220C8D2009BF770051FA04 /* Sources */,
+				0D220C8E2009BF770051FA04 /* Frameworks */,
+				0D220C8F2009BF770051FA04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D220C932009BF770051FA04 /* PBXTargetDependency */,
+			);
+			name = HomeInventoryUITests;
+			productName = HomeInventoryUITests;
+			productReference = 0D220C912009BF770051FA04 /* HomeInventoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D220C632009BF760051FA04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Lyudmyla Ivanova";
+				TargetAttributes = {
+					0D220C6A2009BF760051FA04 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					0D220C852009BF760051FA04 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D220C6A2009BF760051FA04;
+					};
+					0D220C902009BF770051FA04 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D220C6A2009BF760051FA04;
+					};
+				};
+			};
+			buildConfigurationList = 0D220C662009BF760051FA04 /* Build configuration list for PBXProject "HomeInventory" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D220C622009BF760051FA04;
+			productRefGroup = 0D220C6C2009BF760051FA04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D220C6A2009BF760051FA04 /* HomeInventory */,
+				0D220C852009BF760051FA04 /* HomeInventoryTests */,
+				0D220C902009BF770051FA04 /* HomeInventoryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D220C692009BF760051FA04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D220C7E2009BF760051FA04 /* LaunchScreen.storyboard in Resources */,
+				0D220C7B2009BF760051FA04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D220C842009BF760051FA04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D220C8F2009BF770051FA04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D220C672009BF760051FA04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D220C792009BF760051FA04 /* HomeInventory.xcdatamodeld in Sources */,
+				0D220C732009BF760051FA04 /* JETPhotosViewController.m in Sources */,
+				0D220CE8200A05CE0051FA04 /* MobileNet.mlmodel in Sources */,
+				0DD4073D200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m in Sources */,
+				0D220C812009BF760051FA04 /* main.m in Sources */,
+				0D220CE62009F98B0051FA04 /* JETInventoryViewController.m in Sources */,
+				0D220C702009BF760051FA04 /* JETAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D220C822009BF760051FA04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D220C8B2009BF770051FA04 /* HomeInventoryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D220C8D2009BF770051FA04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D220C962009BF770051FA04 /* HomeInventoryUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D220C882009BF760051FA04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D220C6A2009BF760051FA04 /* HomeInventory */;
+			targetProxy = 0D220C872009BF760051FA04 /* PBXContainerItemProxy */;
+		};
+		0D220C932009BF770051FA04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D220C6A2009BF760051FA04 /* HomeInventory */;
+			targetProxy = 0D220C922009BF770051FA04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D220C7C2009BF760051FA04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D220C7D2009BF760051FA04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D220C982009BF770051FA04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0D220C992009BF770051FA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D220C9B2009BF770051FA04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQW96GL67X;
+				INFOPLIST_FILE = HomeInventory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyudmylaivanova.HomeInventory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D220C9C2009BF770051FA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQW96GL67X;
+				INFOPLIST_FILE = HomeInventory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyudmylaivanova.HomeInventory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D220C9E2009BF770051FA04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQW96GL67X;
+				INFOPLIST_FILE = HomeInventoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyudmylaivanova.HomeInventoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeInventory.app/HomeInventory";
+			};
+			name = Debug;
+		};
+		0D220C9F2009BF770051FA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQW96GL67X;
+				INFOPLIST_FILE = HomeInventoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyudmylaivanova.HomeInventoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeInventory.app/HomeInventory";
+			};
+			name = Release;
+		};
+		0D220CA12009BF770051FA04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQW96GL67X;
+				INFOPLIST_FILE = HomeInventoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyudmylaivanova.HomeInventoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HomeInventory;
+			};
+			name = Debug;
+		};
+		0D220CA22009BF770051FA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQW96GL67X;
+				INFOPLIST_FILE = HomeInventoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyudmylaivanova.HomeInventoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HomeInventory;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D220C662009BF760051FA04 /* Build configuration list for PBXProject "HomeInventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D220C982009BF770051FA04 /* Debug */,
+				0D220C992009BF770051FA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D220C9A2009BF770051FA04 /* Build configuration list for PBXNativeTarget "HomeInventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D220C9B2009BF770051FA04 /* Debug */,
+				0D220C9C2009BF770051FA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D220C9D2009BF770051FA04 /* Build configuration list for PBXNativeTarget "HomeInventoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D220C9E2009BF770051FA04 /* Debug */,
+				0D220C9F2009BF770051FA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D220CA02009BF770051FA04 /* Build configuration list for PBXNativeTarget "HomeInventoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D220CA12009BF770051FA04 /* Debug */,
+				0D220CA22009BF770051FA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0D220C772009BF760051FA04 /* HomeInventory.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D220C782009BF760051FA04 /* HomeInventory.xcdatamodel */,
+			);
+			currentVersion = 0D220C782009BF760051FA04 /* HomeInventory.xcdatamodel */;
+			path = HomeInventory.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0D220C632009BF760051FA04 /* Project object */;
+}
