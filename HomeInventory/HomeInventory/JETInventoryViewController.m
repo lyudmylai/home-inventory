@@ -17,7 +17,7 @@
 @implementation JETInventoryViewController
 
 static NSString *const kViewControllerTitle = @"Inventory";
-//static NSString *const kAddButtonTitle = @""
+static NSString *const kReuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,14 +49,10 @@ static NSString *const kViewControllerTitle = @"Inventory";
     return 0;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kReuseIdentifier forIndexPath:indexPath];
     
     return cell;
 }
-*/
 
 @end
