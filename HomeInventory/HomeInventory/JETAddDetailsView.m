@@ -52,7 +52,8 @@ static CGFloat const kInset = 10.0;
 }
 
 - (void)layoutSubviews {
-    [self.titleLabel setFrame:CGRectMake(2 * kInset, kInset, self.titleLabel.frame.size.width,
+    [self.titleLabel setFrame:CGRectMake(2 * kInset, kInset,
+                                         self.frame.size.width - 4 * kInset,
                                          self.titleLabel.frame.size.height)];
     [self.titleTextField setFrame:CGRectMake(2 * kInset,
                                              CGRectGetMaxY(self.titleLabel.frame) + kInset,
@@ -60,7 +61,7 @@ static CGFloat const kInset = 10.0;
                                              self.titleTextField.frame.size.height)];
     [self.brandLabel setFrame:CGRectMake(2 * kInset,
                                          CGRectGetMaxY(self.titleTextField.frame) + 2 * kInset,
-                                         self.brandLabel.frame.size.width,
+                                         self.frame.size.width - 4 * kInset,
                                          self.brandLabel.frame.size.height)];
     [self.brandTextField setFrame:CGRectMake(2 * kInset,
                                              CGRectGetMaxY(self.brandLabel.frame) + kInset,
@@ -68,7 +69,7 @@ static CGFloat const kInset = 10.0;
                                              self.titleTextField.frame.size.height)];
     [self.yearLabel setFrame:CGRectMake(2 * kInset,
                                          CGRectGetMaxY(self.brandTextField.frame) + 2 * kInset,
-                                         self.yearLabel.frame.size.width,
+                                         self.frame.size.width - 4 * kInset,
                                          self.yearLabel.frame.size.height)];
     [self.yearTextField setFrame:CGRectMake(2 * kInset,
                                             CGRectGetMaxY(self.yearLabel.frame) + kInset,
@@ -76,7 +77,7 @@ static CGFloat const kInset = 10.0;
                                             self.yearTextField.frame.size.height)];
     [self.priceLabel setFrame:CGRectMake(2 * kInset,
                                          CGRectGetMaxY(self.yearTextField.frame) + 2 * kInset,
-                                         self.priceLabel.frame.size.width,
+                                         self.frame.size.width - 4 * kInset,
                                          self.priceLabel.frame.size.height)];
     [self.priceTextField setFrame:CGRectMake(2 * kInset,
                                              CGRectGetMaxY(self.priceLabel.frame) + kInset,
