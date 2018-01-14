@@ -10,20 +10,33 @@
 
 @interface JETInventoryViewController ()
 
+@property (strong, nonatomic) NSMutableArray *inventoryItems;
+
 @end
 
 @implementation JETInventoryViewController
 
 static NSString *const kViewControllerTitle = @"Inventory";
+//static NSString *const kAddButtonTitle = @""
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor brownColor];
     [self setTitle:kViewControllerTitle];
+    UIBarButtonItem *addBarButtonItem =
+                        [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                      target:self
+                                                                      action:@selector(onAddButtonTapped:)];
+    self.navigationItem.rightBarButtonItem = addBarButtonItem;
+    self.inventoryItems = [[NSMutableArray alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)onAddButtonTapped:(id)sender {
+    
 }
 
 #pragma mark - Table view data source

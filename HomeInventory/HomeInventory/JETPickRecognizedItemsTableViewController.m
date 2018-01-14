@@ -7,6 +7,8 @@
 //
 
 #import "JETPickRecognizedItemsTableViewController.h"
+#import "JETRecognizedItemTableViewCell.h"
+#import "JETAddDetailsViewController.h"
 
 @interface JETPickRecognizedItemsTableViewController ()
 
@@ -15,10 +17,14 @@
 @implementation JETPickRecognizedItemsTableViewController
 
 static NSString *const kCellIdentifier = @"Cell";
+static CGFloat const kCellHeight = 60.0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.tableView registerClass:[UITableViewCell class]forCellReuseIdentifier:kCellIdentifier];
+    [self.tableView registerClass:[JETRecognizedItemTableViewCell class]forCellReuseIdentifier:kCellIdentifier];
+    self.tableView.rowHeight = kCellHeight;
+    self.tableView.allowsMultipleSelectionDuringEditing = YES;
+    [self.tableView setEditing:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,9 +49,16 @@ static NSString *const kCellIdentifier = @"Cell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = [[self.recognizedItems objectAtIndex:indexPath.row]identifier];
+    JETRecognizedItemTableViewCell *cell =
+                                [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
+    cell.titleLabel.text = [[self.recognizedItems objectAtIndex:indexPath.row]identifier];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    JETAddDetailsViewController *addDetailsVC = [[JETAddDetailsViewController alloc]init];
+    addDetailsVC.titleText = [NSString stringWithString:[[self.recognizedItems objectAtIndex:indexPath.row]identifier]];
+    [self.navigationController pushViewController:addDetailsVC animated:YES];
 }
 
 @end

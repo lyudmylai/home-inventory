@@ -18,6 +18,9 @@
 		0D220CE62009F98B0051FA04 /* JETInventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D220CE52009F98B0051FA04 /* JETInventoryViewController.m */; };
 		0D220CE8200A05CE0051FA04 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0D220CE7200A05CE0051FA04 /* MobileNet.mlmodel */; };
 		0DD4073D200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4073C200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m */; };
+		0DD40740200AAC6B00DBDCD3 /* JETRecognizedItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4073F200AAC6B00DBDCD3 /* JETRecognizedItemTableViewCell.m */; };
+		0DD40743200AD07A00DBDCD3 /* JETAddDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD40742200AD07A00DBDCD3 /* JETAddDetailsViewController.m */; };
+		0DD40746200AD18100DBDCD3 /* JETAddDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD40745200AD18100DBDCD3 /* JETAddDetailsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		0D220CE7200A05CE0051FA04 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 		0DD4073B200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JETPickRecognizedItemsTableViewController.h; sourceTree = "<group>"; };
 		0DD4073C200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JETPickRecognizedItemsTableViewController.m; sourceTree = "<group>"; };
+		0DD4073E200AAC6B00DBDCD3 /* JETRecognizedItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JETRecognizedItemTableViewCell.h; sourceTree = "<group>"; };
+		0DD4073F200AAC6B00DBDCD3 /* JETRecognizedItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JETRecognizedItemTableViewCell.m; sourceTree = "<group>"; };
+		0DD40741200AD07A00DBDCD3 /* JETAddDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JETAddDetailsViewController.h; sourceTree = "<group>"; };
+		0DD40742200AD07A00DBDCD3 /* JETAddDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JETAddDetailsViewController.m; sourceTree = "<group>"; };
+		0DD40744200AD18100DBDCD3 /* JETAddDetailsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JETAddDetailsView.h; sourceTree = "<group>"; };
+		0DD40745200AD18100DBDCD3 /* JETAddDetailsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JETAddDetailsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +122,16 @@
 				0D220C6F2009BF760051FA04 /* JETAppDelegate.m */,
 				0D220C712009BF760051FA04 /* JETPhotosViewController.h */,
 				0D220C722009BF760051FA04 /* JETPhotosViewController.m */,
-				0D220CE42009F98B0051FA04 /* JETInventoryViewController.h */,
-				0D220CE52009F98B0051FA04 /* JETInventoryViewController.m */,
 				0DD4073B200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.h */,
 				0DD4073C200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m */,
+				0DD4073E200AAC6B00DBDCD3 /* JETRecognizedItemTableViewCell.h */,
+				0DD4073F200AAC6B00DBDCD3 /* JETRecognizedItemTableViewCell.m */,
+				0DD40741200AD07A00DBDCD3 /* JETAddDetailsViewController.h */,
+				0DD40742200AD07A00DBDCD3 /* JETAddDetailsViewController.m */,
+				0DD40744200AD18100DBDCD3 /* JETAddDetailsView.h */,
+				0DD40745200AD18100DBDCD3 /* JETAddDetailsView.m */,
+				0D220CE42009F98B0051FA04 /* JETInventoryViewController.h */,
+				0D220CE52009F98B0051FA04 /* JETInventoryViewController.m */,
 				0D220CE7200A05CE0051FA04 /* MobileNet.mlmodel */,
 				0D220C7A2009BF760051FA04 /* Assets.xcassets */,
 				0D220C7C2009BF760051FA04 /* LaunchScreen.storyboard */,
@@ -281,9 +296,12 @@
 				0D220C732009BF760051FA04 /* JETPhotosViewController.m in Sources */,
 				0D220CE8200A05CE0051FA04 /* MobileNet.mlmodel in Sources */,
 				0DD4073D200A8C0B00DBDCD3 /* JETPickRecognizedItemsTableViewController.m in Sources */,
+				0DD40740200AAC6B00DBDCD3 /* JETRecognizedItemTableViewCell.m in Sources */,
 				0D220C812009BF760051FA04 /* main.m in Sources */,
 				0D220CE62009F98B0051FA04 /* JETInventoryViewController.m in Sources */,
+				0DD40746200AD18100DBDCD3 /* JETAddDetailsView.m in Sources */,
 				0D220C702009BF760051FA04 /* JETAppDelegate.m in Sources */,
+				0DD40743200AD07A00DBDCD3 /* JETAddDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

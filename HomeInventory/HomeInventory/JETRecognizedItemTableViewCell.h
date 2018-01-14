@@ -10,4 +10,6 @@
 
 @interface JETRecognizedItemTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) UILabel *titleLabel;
+
 @end
